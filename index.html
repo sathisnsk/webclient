@@ -15,12 +15,12 @@
 
         fetch("https://webserver-jxzi.onrender.com")
         .then((rawResponse) => {
+            console.log(rawResponse);
             return rawResponse.text();
          })
          .then((dataInTextFmt) => {
             console.log(dataInTextFmt);
          });
-
 
 
         /* fetch("https://webserver-jxzi.onrender.com")
