@@ -14,10 +14,12 @@
 
         fetch("https://webserver-jxzi.onrender.com")
         .then((res) => {
-            console.log(res.json());
-        }
-        );
-
+            return res.json();
+        })
+        .then((resolvedResponse) => {
+            console.log(resolvedResponse);
+        });
+          
         //fetch("http://127.0.0.1:3000");
 
     </script>
