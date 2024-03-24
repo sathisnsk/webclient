@@ -12,13 +12,21 @@
             mode:'no-cors'
         }); */
 
-        fetch("https://webserver-jxzi.onrender.com")
+
+        fetch("https://webserver-jxzi.onrender.com").
+        then((data) => {
+            console.log(data);
+         });
+
+        /* fetch("https://webserver-jxzi.onrender.com")
         .then((res) => {
             return res.json();
         })
         .then((resolvedResponse) => {
             console.log(resolvedResponse);
-        });
+        }); */
+
+
           
         //fetch("http://127.0.0.1:3000");
 
