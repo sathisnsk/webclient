@@ -14,9 +14,14 @@
 
 
         fetch("https://webserver-jxzi.onrender.com")
-        .then((data) => {
-            console.log(data);
+        .then((rawResponse) => {
+            return rawResponse.text();
+         })
+         .then((dataInTextFmt) => {
+            console.log(dataInTextFmt);
          });
+
+
 
         /* fetch("https://webserver-jxzi.onrender.com")
         .then((res) => {
