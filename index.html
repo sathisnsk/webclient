@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="icon" href="data:,">
     <title>Document</title>
 </head>
 <body>
     <p> welcome</p>
+    <div id="form-container"></div>
     <script>
-       /*  fetch("https://webserver-jxzi.onrender.com", {
-            mode:'no-cors'
-        }); */
-
-
+        //fetch("http://localhost:3000")
         fetch("https://webserver-jxzi.onrender.com")
         .then((rawResponse) => {
             console.log(rawResponse);
@@ -20,21 +18,8 @@
          })
          .then((dataInTextFmt) => {
             console.log(dataInTextFmt);
+            document.getElementById("form-container").innerHTML = dataInTextFmt;
          });
-
-
-        /* fetch("https://webserver-jxzi.onrender.com")
-        .then((res) => {
-            return res.json();
-        })
-        .then((resolvedResponse) => {
-            console.log(resolvedResponse);
-        }); */
-
-
-          
-        //fetch("http://127.0.0.1:3000");
-
     </script>
 </body>
 </html>
