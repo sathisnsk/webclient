@@ -9,9 +9,10 @@
 <body>
     <p> welcome</p>
     <div id="form-container"></div>
+    
     <script>
-        //fetch("http://localhost:3000")
-        fetch("https://webserver-jxzi.onrender.com")
+        fetch("http://localhost:3000")
+        //fetch("https://webserver-jxzi.onrender.com")
         .then((rawResponse) => {
             console.log(rawResponse);
             return rawResponse.text();
@@ -20,6 +21,10 @@
             console.log(dataInTextFmt);
             document.getElementById("form-container").innerHTML = dataInTextFmt;
          });
+        // var socket = io("https://webserver-jxzi.onrender.com");
+        
+         var socket = io();
+
     </script>
 </body>
 </html>
